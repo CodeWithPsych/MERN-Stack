@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+
+        background-image: linear-gradient(to right, #57acaa, #484844);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        height: 85vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbar {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        border: 2px solid transparent;
+        background-color: black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .right {
+        font-size: 28px;
+        color: white;
+      }
+      .left ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .left ul li {
+        list-style: none;
+        font-size: 20px;
+      }
+      .left ul {
+        display: flex;
+        gap: 12px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid gray;
+        background-color: gray;
+        border-radius: 18px;
+        box-sizing: border-box;
+        padding: 9px;
+        width: 27vw;
+        height: 40vh;
+      }
+      button {
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 12px;
+        color: white;
+        background-color: black;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+      }
+      ::placeholder {
+        color: white;
+      }
+    </style>
+    <title>Register Now</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <div class="navbar">
+      <div class="right">Code With Psych</div>
+      <div class="left">
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Form  -->
+    <div class="main">
+      <div class="form">
+        <h2>Enter Email and Password to proceed</h2>
+        <div style="margin: 12px 0px">
+          <label for="">Email</label> <input type="email" placeholder="Email" />
+        </div>
+        <div style="margin: 6px 0px">
+          <label for="">Password</label>
+          <input type="password" placeholder="Password" />
+        </div>
+        <div style="margin: 3px 0px">
+          <span>Forget Password?</span> <a href="#">Recover Now</a>
+        </div>
+        <div style="margin: 3px 0px">
+          <span>Didn't have account? </span> <a href="#">sign up</a>
+        </div>
+        <button>Let's Go</button>
+      </div>
+    </div>
+  </body>
+</html>

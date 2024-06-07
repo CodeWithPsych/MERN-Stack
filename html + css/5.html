@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p {
+        color: yellowgreen;
+      }
+
+      p::first-letter {
+        color: red;
+      }
+      p::first-line {
+        color: green;
+      }
+      /* p::after {
+  content: url(tyre.png);
+}
+p::before {
+  content: url(tyre.png);
+} */
+      /* p::selection {
+  color: white;
+  background-color: black;
+} */
+      /* linear gradient */
+      body {
+        /* background-color: yellow;
+  background-color: white; */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background: red; */
+        /* background-image: linear-gradient(90deg, red, yellowgreen); */
+        /* background-image: linear-gradient(to right, red, yellowgreen); */
+        /* background-image: linear-gradient(to bottom, red, yellowgreen); */
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      h1 {
+        text-shadow: 2px 2px 5px red;
+      }
+      .container {
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        padding: 6px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid blueviolet;
+        box-shadow: 6px 6px 5px 2px red;
+      }
+    </style>
+    <title>Lec 9</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>Hello world</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque iure
+          incidunt sequi nemo nobis iusto sed laboriosam quis earum, molestiae
+          repudiandae. Voluptatibus, voluptate? Quo iure ratione in quos,
+          praesentium nisi facere reprehenderit sunt laboriosam voluptatem
+          error, rerum saepe, vero tempora debitis animi similique molestias
+          consequuntur amet! Ea voluptate voluptates at.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
