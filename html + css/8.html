@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .navbar {
+        grid-area: navbar;
+      }
+      .main {
+        grid-area: main;
+      }
+      .main2 {
+        grid-area: main2;
+      }
+      .body {
+        grid-area: body;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .gridContainer div {
+        border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .gridContainer {
+        display: grid;
+        grid-template-areas:
+          "navbar navbar navbar navbar navbar footer"
+          "main2 main2 main main main footer"
+          "main2 main2 body body body footer";
+        gap: 10px;
+        /* grid-template-columns: repeat(3,1fr); */
+      }
+    </style>
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="navbar">navbar</div>
+      <div class="main">main</div>
+      <div class="main2">main2</div>
+      <div class="body">body</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
