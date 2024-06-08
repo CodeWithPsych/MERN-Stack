@@ -14,6 +14,18 @@
         margin: 0;
         padding: 0;
       }
+      .humbuger {
+        display: none;
+        flex-direction: column;
+      }
+      .humbuger div {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 3px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 6px;
+      }
       .main {
         height: 85vh;
         width: 100vw;
@@ -73,6 +85,18 @@
       ::placeholder {
         color: white;
       }
+      @media screen and (max-width: 550px) {
+        .left {
+          display: none;
+        }
+        .humbuger {
+          display: flex;
+        }
+        .form{
+          width: 87vw;
+          height: 50vh;
+        }
+      }
     </style>
     <title>Register Now</title>
   </head>
@@ -87,6 +111,11 @@
           <li><a href="https://www.youtube.com/">Youtube</a></li>
           <li><a href="#">Linkedin</a></li>
         </ul>
+      </div>
+      <div class="humbuger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
     <!-- Form  -->
