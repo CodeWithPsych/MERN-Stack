@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <div class="form" id="form">
+      <!-- <table>
+        <tr>
+          <th>Name</th>
+          <th>Father Name</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Father Name</td>
+        </tr>
+      </table> -->
+      <h1>HTML Form</h1>
+      <form>
+        <label for="name">Full Name: </label>
+        <input id="name" type="text" placeholder="Full Name" />
+        <br /><br />
+
+        <label for="father-name">Father's Name: </label>
+        <input id="father-name" type="text" placeholder="Father's Name" />
+        <br /><br />
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Email" />
+        <br /><br />
+
+        <label for="password">Password: </label>
+        <input id="password" type="password" placeholder="Password" />
+        <br /><br />
+
+        <label for="phone">Phone: </label>
+        <input id="phone" type="tel" placeholder="Phone" />
+        <br /><br />
+
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <label for="resume">Resume: </label>
+        <input id="resume" type="file" accept="application/pdf" />
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <h1 id="heading" style="display: none">
+      Results
+      
+    </h1>
+    <div id="results" style="display: none;">
+      
+    </div>
+    <script>
+      let form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        form.style.display = "none";
+        let heading = document.getElementById("heading");
+        heading.style.display = "block";
+        e.preventDefault();
+        let name = document.getElementById("name").value;
+        let fatherName = document.getElementById("father-name").value;
+        let results = document.getElementById("results");
+        results.style.display = "block";
+        results.innerHTML = `Name: ${name} <br> Father Name: ${fatherName}`;
+      });
+    </script>
+  </body>
+</html>
