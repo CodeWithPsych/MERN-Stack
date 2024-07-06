@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Mingle Loom</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav>
+        <div class="nav-wrapper" ">
+        <a href=" #" class="brand-logo "><img class="logo" src="images/logo.png" alt="Logo"><span>Mingle
+                Loom</span></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" id="home-notAllowed">Home</a></li>
+                <li><a href="#" id="more-notAllowed">More info</a></li>
+                <li><a href="#" id="signIn-notAllowed">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- songs  -->
+    <div class="songs">
+        <!-- 1 -->
+        <div class="col s12 m7" id="1">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Gone Girl</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="col s12 m7" id="2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Rafit Rafit</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="col s12 m7" id="3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Shake</p>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="col s12 m7" id="4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Knight Ridah</p>
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="col s12 m7" id="5">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Imaginary</p>
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="col s12 m7" id="6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Pahli war</p>
+                </div>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="col s12 m7" id="7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Cheaque</p>
+                </div>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="col s12 m7" id="8">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>California</p>
+                </div>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="col s12 m7" id="9">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Jamal</p>
+                </div>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="col s12 m7" id="10">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Next Level</p>
+                </div>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="col s12 m7" id="11">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Udh de</p>
+                </div>
+            </div>
+        </div>
+        <!-- 12 -->
+        <div class="col s12 m7" id="12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Nasha</p>
+                </div>
+            </div>
+        </div>
+        <!-- 13 -->
+        <div class="col s12 m7" id="13">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/song.png">
+                </div>
+                <div class="card-content">
+                    <p>Chalieya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- playBar  -->
+    <div class="playbar">
+        <div class="seekbar">
+            <input type="range" min="0" max="100" value="0" id="seekbar">
+        </div>
+        <div class="playbarBtn">
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-play" id="action"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fb3975645b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
